@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_quality_metrics",
+  "info": {
+    "displayName": "Quality Metric",
+    "description": "Kalite video alanı küçük kutusu"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

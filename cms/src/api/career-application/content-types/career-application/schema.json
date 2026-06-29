@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "career_applications",
+  "info": {
+    "singularName": "career-application",
+    "pluralName": "career-applications",
+    "displayName": "Career Application",
+    "description": "Web sitesi kariyer başvuruları"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fullName": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email"
+    },
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "position": {
+      "type": "string",
+      "required": true
+    },
+    "coverLetter": {
+      "type": "text"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": ["new", "reviewing", "interview", "rejected", "hired"],
+      "default": "new",
+      "required": true
+    },
+    "notes": {
+      "type": "text"
+    },
+    "cv": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["files"]
+    }
+  }
+}

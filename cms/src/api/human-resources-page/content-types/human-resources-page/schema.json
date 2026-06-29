@@ -1,0 +1,111 @@
+{
+  "kind": "singleType",
+  "collectionName": "human_resources_pages",
+  "info": {
+    "singularName": "human-resources-page",
+    "pluralName": "human-resources-pages",
+    "displayName": "İnsan Kaynakları Sayfası",
+    "description": "İnsan kaynakları sayfası içerikleri"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.page-hero"
+    },
+    "introEyebrow": {
+      "type": "string"
+    },
+    "introTitle": {
+      "type": "string"
+    },
+    "introDescription": {
+      "type": "text"
+    },
+    "introCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "hr.info-card"
+    },
+    "positionsEyebrow": {
+      "type": "string"
+    },
+    "positionsTitle": {
+      "type": "string"
+    },
+    "positionsDescription": {
+      "type": "text"
+    },
+    "positionsCountSuffix": {
+      "type": "string"
+    },
+    "formEyebrow": {
+      "type": "string"
+    },
+    "formTitle": {
+      "type": "string"
+    },
+    "formDescription": {
+      "type": "text"
+    },
+    "formImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "formFullNamePlaceholder": {
+      "type": "string"
+    },
+    "formPhonePlaceholder": {
+      "type": "string"
+    },
+    "formEmailPlaceholder": {
+      "type": "string"
+    },
+    "formPositionPlaceholder": {
+      "type": "string"
+    },
+    "formCityPlaceholder": {
+      "type": "string"
+    },
+    "formShiftPlaceholder": {
+      "type": "string"
+    },
+    "formExperiencePlaceholder": {
+      "type": "string"
+    },
+    "formNotePlaceholder": {
+      "type": "text"
+    },
+    "formCvEyebrow": {
+      "type": "string"
+    },
+    "formCvDefaultLabel": {
+      "type": "string"
+    },
+    "formCvButtonLabel": {
+      "type": "string"
+    },
+    "formCvHelpText": {
+      "type": "string"
+    },
+    "formKvkkText": {
+      "type": "text"
+    },
+    "formSubmitLabel": {
+      "type": "string"
+    },
+    "formSubmittingLabel": {
+      "type": "string"
+    },
+    "formSuccessMessage": {
+      "type": "string"
+    }
+  }
+}

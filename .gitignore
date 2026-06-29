@@ -1,0 +1,46 @@
+.DS_Store
+Thumbs.db
+
+# dependencies
+node_modules/
+frontend/node_modules/
+cms/node_modules/
+
+# builds
+frontend/.next/
+frontend/out/
+cms/dist/
+cms/build/
+
+# local runtime/cache
+frontend/storage/
+frontend/test-results/
+cms/.strapi/
+cms/.strapi-updater.json
+cms/.tmp/
+cms/exports/
+
+# env/secrets
+.env
+.env.*
+frontend/.env
+frontend/.env.*
+cms/.env
+cms/.env.*
+!frontend/.env.production.example
+!cms/.env.example
+
+# Strapi uploads are runtime data and should be backed up separately.
+cms/public/uploads/*
+!cms/public/uploads/.gitkeep
+
+# logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# misc
+*.pem
+*.tsbuildinfo
+frontend/next-env.d.ts

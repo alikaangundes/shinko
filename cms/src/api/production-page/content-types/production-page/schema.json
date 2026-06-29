@@ -1,0 +1,107 @@
+{
+  "kind": "singleType",
+  "collectionName": "production_pages",
+  "info": {
+    "singularName": "production-page",
+    "pluralName": "production-pages",
+    "displayName": "Üretim Sayfası",
+    "description": "Üretim sayfası içerikleri"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.page-hero"
+    },
+    "machinesEyebrow": {
+      "type": "string"
+    },
+    "machinesTitle": {
+      "type": "string"
+    },
+    "machinesDescription": {
+      "type": "text"
+    },
+    "machineCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "production.machine-card"
+    },
+    "machineGroups": {
+      "type": "component",
+      "repeatable": true,
+      "component": "production.machine-group"
+    },
+    "sectorsEyebrow": {
+      "type": "string"
+    },
+    "sectorsTitle": {
+      "type": "string"
+    },
+    "sectorsDescription": {
+      "type": "text"
+    },
+    "sectorCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "production.sector-card"
+    },
+    "erpEyebrow": {
+      "type": "string"
+    },
+    "erpTitle": {
+      "type": "string"
+    },
+    "erpSolutionCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "production.erp-card"
+    },
+    "erpBlocks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "production.erp-text-block"
+    },
+    "toolingEyebrow": {
+      "type": "string"
+    },
+    "toolingTitleLine1": {
+      "type": "string"
+    },
+    "toolingTitleLine2": {
+      "type": "string"
+    },
+    "toolingDescription": {
+      "type": "text"
+    },
+    "toolingGallery": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "toolingMachines": {
+      "type": "component",
+      "repeatable": true,
+      "component": "production.tooling-machine"
+    },
+    "factoryEyebrow": {
+      "type": "string"
+    },
+    "factoryTitle": {
+      "type": "string"
+    },
+    "factoryImages": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_quality_policy_items",
+  "info": {
+    "displayName": "Quality Policy Item",
+    "description": "Kalite politikası maddesi"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

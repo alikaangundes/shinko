@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_production_machine_cards",
+  "info": {
+    "displayName": "Machine Card",
+    "description": "Üretim makine parkuru kartı"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

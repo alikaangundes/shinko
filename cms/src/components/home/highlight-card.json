@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_home_highlight_cards",
+  "info": {
+    "displayName": "Highlight Card",
+    "description": "Anasayfa sektör/kalite büyük kartı"
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "linkLabel": {
+      "type": "string"
+    },
+    "linkHref": {
+      "type": "string"
+    },
+    "iconKey": {
+      "type": "enumeration",
+      "enum": [
+        "car",
+        "shield"
+      ],
+      "default": "car"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_home_production_stats",
+  "info": {
+    "displayName": "Production Stat",
+    "description": "Anasayfa üretim istatistiği"
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "integer",
+      "required": true
+    },
+    "suffix": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "iconKey": {
+      "type": "enumeration",
+      "enum": [
+        "machine",
+        "tonnage",
+        "building",
+        "team"
+      ],
+      "default": "machine"
+    }
+  }
+}

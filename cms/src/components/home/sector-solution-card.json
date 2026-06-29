@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_home_sector_solution_cards",
+  "info": {
+    "displayName": "Sector Solution Card",
+    "description": "Anasayfa sektörel çözüm kartı"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "href": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.text-item"
+    },
+    "gradient": {
+      "type": "string"
+    },
+    "dotColor": {
+      "type": "string"
+    },
+    "featureColor": {
+      "type": "string"
+    },
+    "iconKey": {
+      "type": "enumeration",
+      "enum": [
+        "car",
+        "electric",
+        "appliance",
+        "garden",
+        "box"
+      ],
+      "default": "box"
+    }
+  }
+}

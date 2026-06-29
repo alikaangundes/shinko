@@ -1,0 +1,81 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_pages",
+  "info": {
+    "singularName": "contact-page",
+    "pluralName": "contact-pages",
+    "displayName": "İletişim Sayfası",
+    "description": "İletişim sayfası içerikleri"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.page-hero"
+    },
+    "infoEyebrow": {
+      "type": "string"
+    },
+    "infoTitle": {
+      "type": "string"
+    },
+    "infoDescription": {
+      "type": "text"
+    },
+    "contactDetails": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contact.contact-detail"
+    },
+    "mapEyebrow": {
+      "type": "string"
+    },
+    "mapTitle": {
+      "type": "string"
+    },
+    "mapDescription": {
+      "type": "text"
+    },
+    "mapEmbedUrl": {
+      "type": "text"
+    },
+    "formEyebrow": {
+      "type": "string"
+    },
+    "formTitle": {
+      "type": "string"
+    },
+    "formDescription": {
+      "type": "text"
+    },
+    "formNamePlaceholder": {
+      "type": "string"
+    },
+    "formPhonePlaceholder": {
+      "type": "string"
+    },
+    "formEmailPlaceholder": {
+      "type": "string"
+    },
+    "formSubjectPlaceholder": {
+      "type": "string"
+    },
+    "formMessagePlaceholder": {
+      "type": "string"
+    },
+    "formButtonLabel": {
+      "type": "string"
+    },
+    "galleryImages": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

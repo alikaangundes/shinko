@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_production_machine_groups",
+  "info": {
+    "displayName": "Machine Group",
+    "description": "Makine tonaj grubu"
+  },
+  "options": {},
+  "attributes": {
+    "minTonnage": {
+      "type": "integer",
+      "required": true
+    },
+    "maxTonnage": {
+      "type": "integer",
+      "required": true
+    },
+    "count": {
+      "type": "integer",
+      "required": true
+    },
+    "percent": {
+      "type": "integer",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

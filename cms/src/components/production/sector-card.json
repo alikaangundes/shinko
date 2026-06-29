@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_production_sector_cards",
+  "info": {
+    "displayName": "Sector Card",
+    "description": "Sektörel çözüm kartı"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "anchorId": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.text-item"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "gradient": {
+      "type": "string"
+    },
+    "accentColor": {
+      "type": "string"
+    }
+  }
+}

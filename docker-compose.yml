@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    container_name: shinko_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: shinko_cms
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - shinko_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  shinko_postgres_data:

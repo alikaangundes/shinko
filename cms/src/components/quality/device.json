@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_quality_devices",
+  "info": {
+    "displayName": "Quality Device",
+    "description": "Kalite cihazı"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "brand": {
+      "type": "string"
+    }
+  }
+}

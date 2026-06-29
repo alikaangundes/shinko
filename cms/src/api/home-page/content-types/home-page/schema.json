@@ -1,0 +1,94 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "Home Page",
+    "description": "Anasayfa temel içerikleri"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "showcaseEyebrow": {
+      "type": "string"
+    },
+    "showcaseTitle": {
+      "type": "string"
+    },
+    "showcaseAccentTitle": {
+      "type": "string"
+    },
+    "showcaseDescription": {
+      "type": "text"
+    },
+    "showcaseTimelineEyebrow": {
+      "type": "string"
+    },
+    "showcaseHeadline": {
+      "type": "text"
+    },
+    "heroVideo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "productionStats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.production-stat"
+    },
+    "productionFeatures": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.production-feature"
+    },
+    "sectorSectionEyebrow": {
+      "type": "string"
+    },
+    "sectorSectionTitle": {
+      "type": "string"
+    },
+    "sectorSectionDescription": {
+      "type": "text"
+    },
+    "sectorSectionLinkLabel": {
+      "type": "string"
+    },
+    "sectorSectionLinkHref": {
+      "type": "string"
+    },
+    "sectorSolutionCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.sector-solution-card"
+    },
+    "highlightCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.highlight-card"
+    },
+    "contactSummaryEyebrow": {
+      "type": "string"
+    },
+    "contactSummaryTitle": {
+      "type": "string"
+    },
+    "contactSummaryAccentTitle": {
+      "type": "string"
+    },
+    "contactSummaryDescription": {
+      "type": "text"
+    },
+    "contactSummaryMapLabel": {
+      "type": "string"
+    },
+    "contactSummaryContactLabel": {
+      "type": "string"
+    }
+  }
+}

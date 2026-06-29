@@ -1,0 +1,9 @@
+import { factories } from "@strapi/strapi";
+
+export default factories.createCoreRouter("api::global.global" as any, {
+  config: {
+    find: {
+      auth: false,
+    },
+  },
+});

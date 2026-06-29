@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_production_tooling_machines",
+  "info": {
+    "displayName": "Tooling Machine",
+    "description": "Kalıphane makine adı"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

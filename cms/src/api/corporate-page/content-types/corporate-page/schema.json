@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "corporate_pages",
+  "info": {
+    "singularName": "corporate-page",
+    "pluralName": "corporate-pages",
+    "displayName": "Kurumsal Sayfa",
+    "description": "Kurumsal sayfası içerikleri"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.page-hero"
+    },
+    "mission": {
+      "type": "component",
+      "repeatable": false,
+      "component": "corporate.feature-section"
+    },
+    "vision": {
+      "type": "component",
+      "repeatable": false,
+      "component": "corporate.feature-section"
+    },
+    "environmentPolicy": {
+      "type": "component",
+      "repeatable": false,
+      "component": "corporate.feature-section"
+    }
+  }
+}

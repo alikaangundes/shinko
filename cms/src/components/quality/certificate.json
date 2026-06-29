@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_quality_certificates",
+  "info": {
+    "displayName": "Certificate",
+    "description": "Kalite sertifikası"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

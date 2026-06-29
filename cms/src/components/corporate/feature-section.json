@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_corporate_feature_sections",
+  "info": {
+    "displayName": "Corporate Feature Section",
+    "description": "Misyon, vizyon ve çevre politikası alanı"
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "body": {
+      "type": "text"
+    },
+    "secondaryBody": {
+      "type": "text"
+    },
+    "points": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.text-item"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

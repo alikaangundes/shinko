@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_production_erp_text_blocks",
+  "info": {
+    "displayName": "ERP Text Block",
+    "description": "ERP açıklama kutusu"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "body": {
+      "type": "text"
+    }
+  }
+}

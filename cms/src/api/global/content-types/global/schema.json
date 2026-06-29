@@ -1,0 +1,91 @@
+{
+  "kind": "singleType",
+  "collectionName": "globals",
+  "info": {
+    "singularName": "global",
+    "pluralName": "globals",
+    "displayName": "Global",
+    "description": "Genel site ayarları"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "siteName": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "footerLogo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "tagline": {
+      "type": "string"
+    },
+    "companyLegalName": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "address": {
+      "type": "text",
+      "required": true
+    },
+    "footerCopyright": {
+      "type": "string"
+    },
+    "navHomeLabel": {
+      "type": "string"
+    },
+    "navCorporateLabel": {
+      "type": "string"
+    },
+    "navProductionLabel": {
+      "type": "string"
+    },
+    "navQualityLabel": {
+      "type": "string"
+    },
+    "navHumanResourcesLabel": {
+      "type": "string"
+    },
+    "navContactLabel": {
+      "type": "string"
+    },
+    "quoteButtonLabel": {
+      "type": "string"
+    },
+    "quoteButtonSubject": {
+      "type": "string"
+    },
+    "mobileMenuOpenLabel": {
+      "type": "string"
+    },
+    "mobileMenuCloseLabel": {
+      "type": "string"
+    },
+    "footerQuickLinksTitle": {
+      "type": "string"
+    },
+    "footerContactTitle": {
+      "type": "string"
+    }
+  }
+}

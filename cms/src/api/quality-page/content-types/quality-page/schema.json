@@ -1,0 +1,87 @@
+{
+  "kind": "singleType",
+  "collectionName": "quality_pages",
+  "info": {
+    "singularName": "quality-page",
+    "pluralName": "quality-pages",
+    "displayName": "Kalite Sayfası",
+    "description": "Kalite sayfası içerikleri"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.page-hero"
+    },
+    "policyEyebrow": {
+      "type": "string"
+    },
+    "policyTitle": {
+      "type": "string"
+    },
+    "policyLeadTitle": {
+      "type": "string"
+    },
+    "policyLeadDescription": {
+      "type": "text"
+    },
+    "policyItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "quality.policy-item"
+    },
+    "featureVideo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "cmmEyebrow": {
+      "type": "string"
+    },
+    "cmmTitle": {
+      "type": "string"
+    },
+    "cmmDescription": {
+      "type": "text"
+    },
+    "cmmMetrics": {
+      "type": "component",
+      "repeatable": true,
+      "component": "quality.metric"
+    },
+    "devicesEyebrow": {
+      "type": "string"
+    },
+    "devicesTitle": {
+      "type": "string"
+    },
+    "devicesDescription": {
+      "type": "text"
+    },
+    "qualityDevices": {
+      "type": "component",
+      "repeatable": true,
+      "component": "quality.device"
+    },
+    "certificatesEyebrow": {
+      "type": "string"
+    },
+    "certificatesTitle": {
+      "type": "string"
+    },
+    "certificatesDescription": {
+      "type": "text"
+    },
+    "certificates": {
+      "type": "component",
+      "repeatable": true,
+      "component": "quality.certificate"
+    }
+  }
+}
