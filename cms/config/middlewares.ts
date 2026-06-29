@@ -1,5 +1,7 @@
 import type { Core } from '@strapi/strapi';
 
+const uploadLimit = 512 * 1024 * 1024;
+
 const config: Core.Config.Middlewares = [
   'strapi::logger',
   'strapi::errors',
@@ -7,7 +9,17 @@ const config: Core.Config.Middlewares = [
   'strapi::cors',
   'strapi::poweredBy',
   'strapi::query',
-  'strapi::body',
+  {
+    name: 'strapi::body',
+    config: {
+      formLimit: '512mb',
+      jsonLimit: '512mb',
+      textLimit: '512mb',
+      formidable: {
+        maxFileSize: uploadLimit,
+      },
+    },
+  },
   'strapi::session',
   'strapi::favicon',
   'strapi::public',
