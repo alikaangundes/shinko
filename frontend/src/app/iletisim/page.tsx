@@ -1,9 +1,19 @@
+import type { Metadata } from "next";
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
 import { PageHero } from "@/components/layout/PageHero";
 import { AnimatedNumber } from "@/components/ui/AnimatedNumber";
 import { Reveal } from "@/components/ui/Reveal";
 import { getContactPageContent, getGlobalContent } from "@/lib/strapi";
+
+export const metadata: Metadata = {
+  title: "İletişim",
+  description:
+    "Shinko iletişim bilgileri, fabrika konumu, telefon, e-posta ve iletişim formu.",
+  alternates: {
+    canonical: "/iletisim",
+  },
+};
 
 function ArrowIcon() {
   return (

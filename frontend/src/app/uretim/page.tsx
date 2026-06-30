@@ -1,4 +1,5 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
@@ -9,6 +10,15 @@ import { AnimatedProgressBar } from "@/components/ui/AnimatedProgressBar";
 import { Reveal } from "@/components/ui/Reveal";
 import { resolveMediaList, resolveMediaUrl } from "@/lib/strapi-media";
 import { getGlobalContent, getProductionPageContent } from "@/lib/strapi";
+
+export const metadata: Metadata = {
+  title: "Üretim",
+  description:
+    "Shinko üretim altyapısı; makine parkuru, plastik enjeksiyon kapasitesi, sektörel üretim çözümleri, ERP süreçleri ve kalıp imalat bakım olanakları.",
+  alternates: {
+    canonical: "/uretim",
+  },
+};
 
 type MachineCard = {
   name: string;
@@ -461,9 +471,9 @@ export default async function UretimPage() {
             <p className="text-base font-bold uppercase tracking-[0.2em] text-[#ff8c40]">
               {page.machinesEyebrow}
             </p>
-            <h2 className="mt-5 text-[clamp(3rem,13vw,4.5rem)] font-bold uppercase leading-[0.92] text-white sm:text-7xl">
+            <h1 className="mt-5 text-[clamp(3rem,13vw,4.5rem)] font-bold uppercase leading-[0.92] text-white sm:text-7xl">
               {page.machinesTitle}
-            </h2>
+            </h1>
             <p className="mt-8 max-w-md text-lg font-semibold leading-9 text-white">
               {cmsPage.machinesDescription}
             </p>

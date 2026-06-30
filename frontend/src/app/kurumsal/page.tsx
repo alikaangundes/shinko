@@ -1,10 +1,20 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { PageHero } from "@/components/layout/PageHero";
 import { Reveal } from "@/components/ui/Reveal";
 import { AnimatedNumber } from "@/components/ui/AnimatedNumber";
 import { getCorporatePageContent, getGlobalContent } from "@/lib/strapi";
+
+export const metadata: Metadata = {
+  title: "Kurumsal",
+  description:
+    "Shinko'nun kalite anlayışı, misyonu, vizyonu ve çevre politikası hakkında kurumsal bilgiler.",
+  alternates: {
+    canonical: "/kurumsal",
+  },
+};
 
 function CorporateFeature({
   eyebrow,

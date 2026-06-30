@@ -1,10 +1,20 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
 import { PageHero } from "@/components/layout/PageHero";
 import { AnimatedNumber, AnimatedNumericText } from "@/components/ui/AnimatedNumber";
 import { Reveal } from "@/components/ui/Reveal";
 import { getGlobalContent, getSitePageContent } from "@/lib/strapi";
+
+export const metadata: Metadata = {
+  title: "Ulaşım",
+  description:
+    "Shinko fabrika konumu, ulaşım bilgileri ve lojistik bağlantı detayları.",
+  alternates: {
+    canonical: "/ulasim",
+  },
+};
 
 export default async function UlasimPage() {
   const [globalContent, pageContent] = await Promise.all([

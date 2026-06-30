@@ -1,4 +1,5 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
 import { PageHero } from "@/components/layout/PageHero";
@@ -11,6 +12,15 @@ import {
   getJobPostings,
 } from "@/lib/strapi";
 import { resolveMediaUrl } from "@/lib/strapi-media";
+
+export const metadata: Metadata = {
+  title: "İnsan Kaynakları",
+  description:
+    "Shinko kariyer fırsatları, açık pozisyonlar ve online iş başvuru formu.",
+  alternates: {
+    canonical: "/insan-kaynaklari",
+  },
+};
 
 const fallbackOpenPositions = [
   {

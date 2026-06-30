@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
 import { PageHero } from "@/components/layout/PageHero";
@@ -6,6 +7,15 @@ import { AnimatedNumber } from "@/components/ui/AnimatedNumber";
 import { Reveal } from "@/components/ui/Reveal";
 import { getGlobalContent, getQualityPageContent } from "@/lib/strapi";
 import { resolveMediaUrl } from "@/lib/strapi-media";
+
+export const metadata: Metadata = {
+  title: "Kalite",
+  description:
+    "Shinko kalite politikası, kalite güvence yaklaşımı, ölçüm cihazları ve üretim sertifikaları.",
+  alternates: {
+    canonical: "/kalite",
+  },
+};
 
 function CheckIcon() {
   return (
