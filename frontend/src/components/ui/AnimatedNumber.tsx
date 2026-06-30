@@ -31,7 +31,7 @@ export function AnimatedNumber({
   padStart,
   startOnView = true,
 }: AnimatedNumberProps) {
-  const [current, setCurrent] = useState(startOnView ? 0 : value);
+  const [current, setCurrent] = useState(value);
   const ref = useRef<HTMLSpanElement | null>(null);
   const frame = useRef<number | null>(null);
   const started = useRef(false);
@@ -57,7 +57,7 @@ export function AnimatedNumber({
     };
 
     started.current = false;
-    setCurrent(startOnView ? 0 : value);
+    setCurrent(value);
 
     if (!Number.isFinite(value) || value <= 0) {
       finish();
@@ -77,6 +77,7 @@ export function AnimatedNumber({
       }
 
       started.current = true;
+      setCurrent(0);
       const startedAt = performance.now();
 
       const tick = (now: number) => {
