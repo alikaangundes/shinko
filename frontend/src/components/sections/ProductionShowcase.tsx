@@ -131,10 +131,15 @@ export function ProductionShowcase({ homeContent = defaultHomePageContent }: Pro
     ...stat,
     icon: productionStats[index]?.icon || productionStats[0].icon,
   }));
-  const productionFeatures = homeContent.productionFeatures.map((feature, index) => ({
-    ...(productionFeatureFallbacks[index] || productionFeatureFallbacks[0]),
-    ...feature,
-  }));
+  const productionFeatures = homeContent.productionFeatures.map((feature, index) => {
+    const fallbackFeature = productionFeatureFallbacks[index] || productionFeatureFallbacks[0];
+
+    return {
+      ...fallbackFeature,
+      ...feature,
+      icon: fallbackFeature.icon,
+    };
+  });
   const showcaseEyebrow =
     homeContent.showcaseEyebrow || defaultHomePageContent.showcaseEyebrow;
   const showcaseDescription =
@@ -264,8 +269,10 @@ export function ProductionShowcase({ homeContent = defaultHomePageContent }: Pro
                 />
                 <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(8,10,13,0.05)_18%,rgba(8,10,13,0.95)_74%)]" />
                 <div className="absolute inset-x-0 bottom-0 z-10 flex h-[170px] flex-col p-4 sm:h-[205px] sm:p-5 lg:h-[175px] lg:p-4 xl:h-[190px] xl:p-5">
-                  <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-md bg-[#ff6818] p-2 text-white sm:mb-4 sm:h-12 sm:w-12 sm:p-2.5 lg:mb-3 lg:h-10 lg:w-10 lg:p-2">
-                    {feature.icon}
+                  <div className="mb-3 flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-[#ff6818] p-2.5 text-white shadow-[0_12px_28px_rgba(255,104,24,0.28)] sm:mb-4 sm:h-12 sm:w-12 sm:p-2.5 lg:mb-3 lg:h-10 lg:w-10 lg:p-2">
+                    <span className="block h-full w-full text-white [&>svg]:h-full [&>svg]:w-full [&>svg]:stroke-current">
+                      {feature.icon}
+                    </span>
                   </div>
                   <h3 className="min-h-9 text-sm font-extrabold uppercase leading-5 text-white sm:min-h-12 sm:text-lg sm:leading-6 lg:min-h-11 lg:text-base lg:leading-[1.35] xl:text-lg">
                     {feature.title}
