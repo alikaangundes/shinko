@@ -17,10 +17,13 @@ export function AnimatedProgressBar({
   duration = 1200,
   delay = 0,
 }: AnimatedProgressBarProps) {
+  const [hasMounted, setHasMounted] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
+    setHasMounted(true);
+
     const node = ref.current;
 
     if (!node) {
@@ -57,6 +60,7 @@ export function AnimatedProgressBar({
   }, []);
 
   const safeValue = Math.max(0, Math.min(value, 100));
+  const shouldShowFullValue = !hasMounted || isVisible;
 
   return (
     <div
@@ -70,8 +74,10 @@ export function AnimatedProgressBar({
       <div
         className={barClassName}
         style={{
-          width: isVisible ? `${safeValue}%` : "0%",
-          transition: `width ${duration}ms ${delay}ms cubic-bezier(0.34, 1.2, 0.64, 1)`,
+          width: `${safeValue}%`,
+          transform: `scaleX(${shouldShowFullValue ? 1 : 0})`,
+          transformOrigin: "left",
+          transition: `transform ${duration}ms ${delay}ms cubic-bezier(0.34, 1.2, 0.64, 1)`,
         }}
       />
     </div>
