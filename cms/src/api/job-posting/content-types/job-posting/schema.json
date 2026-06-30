@@ -29,7 +29,9 @@
       "type": "text"
     },
     "requirements": {
-      "type": "json"
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.text-item"
     },
     "isActive": {
       "type": "boolean",
