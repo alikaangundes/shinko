@@ -111,6 +111,7 @@ export default {
     await ensurePublicPermissions(strapi, [
       ...publicPermissionsSeed,
       "api::career-application.career-application.create",
+      "api::contact-message.contact-message.create",
       "api::job-posting.job-posting.find",
       "api::job-posting.job-posting.findOne",
       "plugin::upload.content-api.upload",

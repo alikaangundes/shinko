@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
 import { PageHero } from "@/components/layout/PageHero";
+import { ContactMessageForm } from "@/components/sections/ContactMessageForm";
 import { AnimatedNumber } from "@/components/ui/AnimatedNumber";
 import { Reveal } from "@/components/ui/Reveal";
 import { getContactPageContent, getGlobalContent } from "@/lib/strapi";
@@ -14,15 +15,6 @@ export const metadata: Metadata = {
     canonical: "/iletisim",
   },
 };
-
-function ArrowIcon() {
-  return (
-    <svg viewBox="0 0 40 16" className="h-4 w-10" fill="none" stroke="currentColor" strokeWidth="1.5">
-      <path d="M0 8h37" />
-      <path d="m31 2 6 6-6 6" />
-    </svg>
-  );
-}
 
 function ContactIcon() {
   return (
@@ -146,46 +138,16 @@ export default async function IletisimPage() {
               ) : null}
             </div>
 
-            <form className="border border-slate-200 bg-[#f7f9fb] p-6 shadow-[0_22px_60px_rgba(15,21,27,0.06)] sm:p-8">
-              <div className="grid gap-5 sm:grid-cols-2">
-                <input
-                  type="text"
-                  placeholder={page.formNamePlaceholder}
-                  className="border border-slate-200 bg-white px-6 py-5 text-sm font-semibold uppercase text-slate-950 outline-none placeholder:text-slate-400 focus:border-[#ef783e]"
-                />
-                <input
-                  type="tel"
-                  placeholder={page.formPhonePlaceholder}
-                  className="border border-slate-200 bg-white px-6 py-5 text-sm font-semibold uppercase text-slate-950 outline-none placeholder:text-slate-400 focus:border-[#ef783e]"
-                />
-                <input
-                  type="email"
-                  placeholder={page.formEmailPlaceholder}
-                  className="border border-slate-200 bg-white px-6 py-5 text-sm font-semibold uppercase text-slate-950 outline-none placeholder:text-slate-400 focus:border-[#ef783e]"
-                />
-                <input
-                  type="text"
-                  placeholder={page.formSubjectPlaceholder}
-                  className="border border-slate-200 bg-white px-6 py-5 text-sm font-semibold uppercase text-slate-950 outline-none placeholder:text-slate-400 focus:border-[#ef783e]"
-                />
-              </div>
-
-              <textarea
-                placeholder={page.formMessagePlaceholder}
-                rows={8}
-                className="mt-5 w-full border border-slate-200 bg-white px-6 py-5 text-sm font-semibold uppercase text-slate-950 outline-none placeholder:text-slate-400 focus:border-[#ef783e]"
-              />
-
-              <div className="mt-6 text-right">
-                <button
-                  type="button"
-                  className="inline-flex items-center gap-5 bg-[#ef783e] px-9 py-5 text-xs font-semibold uppercase text-white transition-colors hover:bg-[#11161b]"
-                >
-                  {page.formButtonLabel}
-                  <ArrowIcon />
-                </button>
-              </div>
-            </form>
+            <ContactMessageForm
+              labels={{
+                namePlaceholder: page.formNamePlaceholder,
+                phonePlaceholder: page.formPhonePlaceholder,
+                emailPlaceholder: page.formEmailPlaceholder,
+                subjectPlaceholder: page.formSubjectPlaceholder,
+                messagePlaceholder: page.formMessagePlaceholder,
+                buttonLabel: page.formButtonLabel,
+              }}
+            />
           </div>
         </Reveal>
       </main>
