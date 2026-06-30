@@ -297,7 +297,7 @@ export async function getHomePageContent(): Promise<HomePageContent> {
 
 export async function getJobPostings(): Promise<JobPosting[]> {
   const response = await fetchFromStrapi<CollectionResponse<Record<string, unknown>>>(
-    "/api/job-postings?filters[isActive][$eq]=true&sort[0]=sortOrder:asc&sort[1]=createdAt:desc",
+    "/api/job-postings?filters[isActive][$eq]=true&populate[requirements]=true&sort[0]=sortOrder:asc&sort[1]=createdAt:desc",
   );
 
   if (!response?.data) {
