@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { navItems } from "@/lib/site";
 import { defaultGlobalContent, type GlobalContent } from "@/lib/site-content";
 
@@ -17,7 +17,9 @@ export function Navbar({ globalContent }: NavbarProps) {
     ...globalContent,
   };
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [hasHydrated, setHasHydrated] = useState(false);
   const pathname = usePathname();
+  const isMobileMenuVisible = !hasHydrated || isMenuOpen;
   const isActive = (href: string) => pathname === href;
   const navLabelByHref: Record<string, string> = {
     "/": content.navHomeLabel,
@@ -38,6 +40,10 @@ export function Navbar({ globalContent }: NavbarProps) {
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
+
+  useEffect(() => {
+    setHasHydrated(true);
+  }, []);
 
   return (
     <header
@@ -90,17 +96,17 @@ export function Navbar({ globalContent }: NavbarProps) {
           type="button"
           onClick={() => setIsMenuOpen((current) => !current)}
           className="inline-flex items-center justify-center border border-slate-200 bg-white px-4 py-3 text-xs font-semibold uppercase tracking-[0.24em] text-slate-950 shadow-[0_8px_24px_rgba(15,23,42,0.06)] lg:hidden"
-          aria-expanded={isMenuOpen}
+          aria-expanded={isMobileMenuVisible}
           aria-controls="mobile-menu"
         >
-          {isMenuOpen ? content.mobileMenuCloseLabel : content.mobileMenuOpenLabel}
+          {isMobileMenuVisible ? content.mobileMenuCloseLabel : content.mobileMenuOpenLabel}
         </button>
       </div>
 
       <div
         id="mobile-menu"
         className={`overflow-hidden border-t border-[#ef783e]/35 bg-white/98 transition-[max-height,opacity] duration-500 lg:hidden ${
-          isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          isMobileMenuVisible ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         <nav className="mx-auto flex max-w-7xl flex-col px-5 py-6 sm:px-6">

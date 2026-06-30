@@ -18,13 +18,21 @@ export function Reveal<T extends ElementType = "div">({
   ...props
 }: RevealProps<T>) {
   const [isVisible, setIsVisible] = useState(false);
+  const [hasHydrated, setHasHydrated] = useState(false);
   const ref = useRef<HTMLElement | null>(null);
   const Component = (as ?? "div") as ElementType;
 
   useEffect(() => {
+    setHasHydrated(true);
+
     const node = ref.current;
 
     if (!node) {
+      return;
+    }
+
+    if (!("IntersectionObserver" in window)) {
+      setIsVisible(true);
       return;
     }
 
@@ -53,7 +61,9 @@ export function Reveal<T extends ElementType = "div">({
   return (
     <Component
       ref={ref}
-      className={`reveal-base ${isVisible ? "reveal-visible" : ""}${className ? ` ${className}` : ""}`}
+      className={`reveal-base ${hasHydrated && !isVisible ? "reveal-pending" : ""} ${
+        isVisible ? "reveal-visible" : ""
+      }${className ? ` ${className}` : ""}`}
       style={{ transitionDelay: `${delay}ms` }}
       {...props}
     >
