@@ -304,7 +304,7 @@ export const defaultSitePagesContent = {
         title: "Misyon",
         body: "Misyonumuz, rakipsiz, hızlı, güvenilir ve üstün çözümler sunarak müşterilerimizin beklentilerini karşılamaktır.",
         image:
-          "/shinko/kurumsal/WhatsApp%20Image%202026-06-14%20at%2023.28.49.jpeg",
+          "/shinko/kurumsal/mission.jpeg",
         points: [
           "Plastik Enjeksiyon Kalıp ve Parça İmalatı",
           "Sürekli iyileşme ve gelişen organizasyon yapısını sağlamak",
@@ -320,7 +320,7 @@ export const defaultSitePagesContent = {
         bodyBottom:
           "Müşterilerimizin işlerindeki başarılarına ortak olurken, çalışanlarımızın ve toplumumuzun yaşamlarında ve geleceklerinde fark yaratmaya devam edeceğiz.",
         image:
-          "/shinko/kurumsal/WhatsApp%20Image%202026-06-14%20at%2023.28.49%20%281%29.jpeg",
+          "/shinko/kurumsal/vision.jpeg",
         points: [
           "Müşterilerimizle karşılıklı hedefleri sağlamak için beraber çalışmak",
           "Müşteri memnuniyetini sağlarken çevreye saygıyı gözetmek ve rekabetçiliğimizi tüm ürün ve proseslerde sürekli iyileşme ile sağlamak",
@@ -333,7 +333,7 @@ export const defaultSitePagesContent = {
         title: "Çevre Politikası",
         body: "Shinko ve çalışanları olarak, çevre mevzuat ve yasalarına uymak, çevreye zararlı her türlü maddenin kullanımını azaltmak veya engellemek ve bizden sonraki nesillere yaşanabilir bir çevre bırakmak temel hedefimizdir.",
         image:
-          "/shinko/kurumsal/WhatsApp%20Image%202026-06-14%20at%2023.28.49%20%282%29.jpeg",
+          "/shinko/kurumsal/environment.jpeg",
         points: [
           "Çevre kanun ve mevzuatlarına uymak",
           "Enerji ve doğal kaynakların tüketimini azaltmak",

@@ -129,9 +129,11 @@ export default async function IletisimPage() {
                 {page.formTitle}
               </h2>
               <div className="mt-7 h-0.5 w-14 bg-[#ef783e]" />
-              <p className="mt-7 max-w-md text-base leading-8 text-slate-700">
-                {page.formDescription}
-              </p>
+              {page.formDescription ? (
+                <p className="mt-7 max-w-md text-base leading-8 text-slate-700">
+                  {page.formDescription}
+                </p>
+              ) : null}
             </div>
 
             <form className="border border-slate-200 bg-[#f7f9fb] p-6 shadow-[0_22px_60px_rgba(15,21,27,0.06)] sm:p-8">

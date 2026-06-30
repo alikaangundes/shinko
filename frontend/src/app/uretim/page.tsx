@@ -250,13 +250,13 @@ export default async function UretimPage() {
   ];
   const toolingItems = mapToolingMachines(cmsPage.toolingMachines, fallbackToolingItems);
   const fallbackToolingImages = [
-    "/shinko/uretim/Kaliphane/0YPnQmL6unwpwQBfKGk7qitorStzqxexujZ0FAo1sXwCvxfBRktF-9nJ4BIzUjrShd_69wRdkB7fZ9W-z7RowS-pDBYuC5JAL7VaXDiwrl6BspJwmkvGst3mFdAOdqyYgUfZRvoLZy6gpUqKXhFoGFr991VNpxTg_lq2m4l6Pd5cgF_zc_in0b7V4La__DH_.jpeg",
-    "/shinko/uretim/Kaliphane/7ZkQbzugsB83uEzHtBEEJPD7kqZl5kQ2qBD1LED_eoMwgSr58e0aYKMhZXp9nGIiAmKbIl4U5N_QRcMhE0xOXCt1N0WWyvsM9FwZQb1h_kOUPUO2z_X8noJeledr5Iymv7N272jpJeOKgf03RTOy7oEWR2Dj3ZR8A1ICj7qNWxKxNEAm_rVYW0I7HtdWFhKY.jpeg",
-    "/shinko/uretim/Kaliphane/OiU89KeujUwAk78EaJlbEf7lWcmvMXoerlA1DFejn7x1w0rxJTkoQhwQqwGO6v-Yqtd6nZqlJ-m-zpVjD634eugiHQQPmf6MtLWEZQynkq8zczN5eu_RmmMr0eDuCbNgE2Xh_PdRfvDYZB8tGluKSox-fsOcb7sMFQklAFXIiEzfnlm7eOs5tRgqb7K2OhY4.jpeg",
-    "/shinko/uretim/Kaliphane/WhatsApp Image 2026-06-14 at 21.53.04.jpeg",
-    "/shinko/uretim/Kaliphane/XXHO0nU0N59xalMnGs_NBZnC73VTcSUCO_EP6XaCZiesPcmsWPBRRqlzvB39gx20niMqjR2BQ0kIK82wfFNjlmhg6ARbDSYgv67tE0MJQ6v6Y1ChpCby3gTs2FmUcNGC4pVLI-a7V1BH_Gp_i8tb7kysj1BBkFWoK6Axy2cXGASaFVL5Y3nE7LFrxGlhSWYa.jpeg",
-    "/shinko/uretim/Kaliphane/YprEKpTbXENH25grbCp1_MQC1LIVRvys9JKw7KTEWPcMFIpMjFtXuciuWgHQfelmMBH0txZvhhRR-rPYH9YdCpWxZT6EclFF44VCSXlXJ-tFuSFZejug_TS_ACj8slHna8GsxmblRTm7FbuzUR36cgbvUXPmtaKvgXYTUqfYHT8U1dj1_ie-1nofqPwlbO0F.jpeg",
-    "/shinko/uretim/Kaliphane/kzb_wfuL_CEVCGC7shg5teUHZt6Bgm42e12zXoB57nwRyy2IbujVdkMfpdesbs5uwc1bawty6nhSdnO0aZ473yyL_2s925x70o35fiQKxGi_AUH09jmsNZmdolwFuGZeMMZ61Ua2KRqAlO_ETjOWcam1vwaaUYifrovEoHlwc0i1M2W1T5Py5GWeGuPX1fG_.jpeg",
+    "/shinko/uretim/Kaliphane/AA.jpeg",
+    "/shinko/uretim/Kaliphane/BB.jpeg",
+    "/shinko/uretim/Kaliphane/CC.jpeg",
+    "/shinko/uretim/Kaliphane/DD.jpeg",
+    "/shinko/uretim/Kaliphane/EE.jpeg",
+    "/shinko/uretim/Kaliphane/FF.jpeg",
+    "/shinko/uretim/Kaliphane/GG.jpeg",
     "/shinko/uretim/picture (22 of 38).jpg",
     "/shinko/uretim/picture (25 of 38).jpg",
     "/shinko/uretim/picture (26 of 38).jpg",
